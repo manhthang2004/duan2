@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+
+@font-face {
+    font-family: "SpaceCrusadersItalic";
+    src: url(../Font/SpaceCrusadersItalic-ZV1Zx.ttf);
+}
+
+:root {
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #00b3ff;
+}
+
+body {
+    /* font-family: var(--sm-font); */
+    background-color: whitesmoke;
+    min-height: 100vh;
+}
+
+/* button */
+.bg-primary {
+    background-color: var(--pink) !important;
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 5px 28px;
+    border-radius: 5px;
+    border: 1px solid rgb(85, 85, 85);
+    font-weight: 600;
+    transition: 0.3 ease;
+    box-shadow: 1px 1px 1px black;
+    color: black;
+}
+
+.btn:not(.nav-btns button):hover {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* text color */
+.text-primary {
+    color: var(--pink) !important;
+}
+
+/* navbar */
+.navbar {
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    color: black;
+    font-weight: 400;
+}
+
+.navbar-brand span {
+    font-size: 25px;
+    font-family: "SpaceCrusadersItalic";
+    font-weight: normal;
+}
+
+.nav-link:hover {
+    color: var(--pink) !important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn {
+    border-color: #fff !important;
+}
+
+.carousel-item .btn:hover {
+    border-color: var(--pink) !important;
+}
+
+/* title */
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Sản Phẩm */
+.active-filter-btn {
+    background-color: var(--pink) !important;
+    color: #fff !important;
+    border-color: var(--pink) !important;
+}
+
+.filter-button-group .btn:hover {
+    color: #fff !important;
+}
+
+.collection-img span {
+    top: 0px;
+    right: 0px;
+    width: auto;
+    border-radius: 0px 5px 0px 10px;
+    padding: 2.5px 5px 2.5px 5px;
+    font-weight: 600;
+    box-shadow: 0px 0px 5px #00b3ff;
+    font-family: "Poppins";
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-img-top {
+    overflow: hidden;
+    transition: 0.3s ease;
+
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.title-product {
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #00b3ff;
+    color: white;
+    font-family: "Dosis-VariableFont";
+    font-weight: bold;
+    box-shadow: 0px 0px 5px gray;
+}
+
+@font-face {
+    font-family: "Dosis-VariableFont";
+    src: url(../Font/Dosis-VariableFont_wght.ttf);
+}
+
+.product-title a {
+    font-family: "Dosis-VariableFont";
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    color: inherit;
+    /* Giữ màu chữ mặc định của cha */
+    text-decoration: none;
+    /* Loại bỏ gạch chân mặc định */
+}
+
+.product-title:hover a {
+    text-shadow: 1.5px 1.5px 2px #00b3ff;
+}
+
+.product-title{
+    height: 44px;
+    margin-bottom: 5px;
+}
+
+.old-price {
+    font-size: 11px;
+    color: gray;
+    font-family: "Poppins";
+}
+
+.new-price {
+    font-weight: bold;
+    color: red;
+    font-family: "Poppins";
+}
+
+.star-rate {
+    color: orange;
+}
+
+.rate {
+    color: orange;
+    font-weight: bold;
+    font-family: "Poppins";
+}
+
+.rate-quantity {
+    color: gray;
+    font-family: "Poppins";
+    font-size: 12px;
+}
+
+
+/* special */
+.special-img span {
+    top: 20px;
+    right: 20px;
+}
+
+.special-list .btn {
+    padding: 8px 20px !important;
+}
+
+.special-img img {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.special-img:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* offers */
+#offers {
+    background: url(../img/sanpham/test.png) center/cover no-repeat;
+}
+
+#offers .row {
+    min-height: 60vh;
+}
+
+.offers-content span {
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px 5px black;
+}
+
+.offers-content h2 {
+    font-size: 50px;
+    font-family: var(--lg-font);
+    text-shadow: 2px 2px 5px black;
+}
+
+.offers-content .btn {
+    border-color: transparent !important;
+    box-shadow: 2px 2px 5px black;
+    font-weight: 500;
+}
+
+/* Giới Thiệu */
+#about {
+    background-color: white;
+    background-image: linear-gradient(to right, #0E2241, #00b3ff);
+}
+
+#about img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px black;
+    transition: 0.3s ease;
+}
+
+#about img:hover {
+    opacity: 0.7;
+}
+
+/* newsletter */
+#newsletter {
+    background-color: white;
+}
+
+#newsletter p {
+    max-width: 600px;
+}
+
+#newsletter .input-group {
+    max-width: 500px;
+}
+
+#newsletter .form-control {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+
+#newsletter .btn {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+    transition: 0.3s ease;
+}
+
+#newsletter .btn:hover {
+    background-color: #0E2241;
+    border-color: #0E2241;
+}
+
+
+/* media queries */
+@media(min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
+
+/* Silder */
+.carousel {
+    margin-top: 00px;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.carousel img {
+    border-radius: 10px 0px 0px 10px;
+}
+
+/* Scroll To Top */
+.to-top {
+    background-color: white;
+    position: fixed;
+    bottom: 800px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: 0.3s ease;
+    /* pointer-events: none; */
+    box-shadow: 0px 0px 5px black;
+    z-index: 99999;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.to-top:hover {
+    background-color: #00b3ff;
+    color: white;
+}
+
+.to-top.active {
+    bottom: 100px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- Form Tìm Kiếm */
+.searchBox {
+    position: fixed;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: auto;
+    z-index: 999;
+}
+
+.searchBox input {
+    /* background-image: linear-gradient(to right, #0E2241, white); */
+    border: 0;
+    box-shadow: 0px 0px 5px black !important;
+    color: black !important;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.searchBox .searchBoxButton {
+    background-color: white !important;
+    border: 0;
+    box-shadow: 0px 0px 5px black !important;
+    border-radius: 0;
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 10px 0px;
+    transition: 0.3s ease;
+    z-index: 9999;
+    color: black !important;
+}
+
+.searchBox .searchBoxButton:hover {
+    background-color: #00b3ff !important;
+    color: white !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- Chi Tiết Sản Phẩm */
+.product-title-details {
+    font-family: "Dosis-VariableFont";
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.product-title-details a {
+    text-decoration: none;
+    color: black;
+}
+
+.all-price-details del {
+    font-size: x-large;
+    color: gray;
+    font-family: "Poppins";
+    margin-right: 10px;
+}
+
+.new-price-details {
+    font-size: xx-large;
+    font-weight: bold;
+    color: red;
+    margin-right: 15px;
+    font-family: "Poppins";
+}
+
+.product-percent-details {
+    font-size: medium;
+    font-weight: bold;
+    font-family: "Poppins";
+    border: 2px solid red;
+    border-radius: 3px;
+    color: white;
+    padding: 0px 5px;
+    color: red;
+}
+
+.all-price-details {
+    display: flex;
+    align-items: center;
+}
+
+.star-rate-details {
+    color: orange;
+    font-size: large;
+}
+
+.rate-details {
+    color: orange;
+    font-weight: bold;
+    font-family: "Poppins";
+    font-size: large;
+}
+
+.rate-quantity-details {
+    color: gray;
+    font-family: "Poppins";
+    font-size: small;
+}
+
+.check-rate-details {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: medium;
+    color: #00b3ff;
+    transition: 0.3s ease;
+}
+
+.check-rate-details:hover {
+    color: #0E2241;
+    text-decoration: underline;
+}
+
+.accompanying-services span {
+    color: red;
+    font-weight: bold;
+    display: block;
+}
+
+.all-product-details span {
+    display: block;
+}
+
+.popup-image{
+    top: 0;
+    left: 0;
+    display: none;
+    height: 100px;
+    width: 100%;
+    z-index: 999999;
+}
+
+.popup-image span{
+    position: fixed;
+    top: 0px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+.popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+    z-index: 999999;
+}
+
+@media (max-width:789px) {
+    .popup-image img{
+        width: 95%;
+    }
+}
+
+/* footer */
+footer .brand {
+    font-family: "SpaceCrusadersItalic";
+}
+
+footer p {
+    padding-right: 50px;
+}
+
+footer a {
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--pink) !important;
+}
+
+footer {
+    background-image: linear-gradient(to right, #0E2241, black);
+    top: 100%;
+    position: sticky;
+}

@@ -1,0 +1,36 @@
+.from{
+    
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.form-update{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.form-add{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.name{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px ;
+    border: solid 2px rgb(102, 181, 237);
+}
+.button{
+    color: #000;
+    width: 10%;
+    border: 1px solid rgb(104, 104, 226);
+    border-radius: 5px;
+    background-color: rgb(193, 225, 240);
+}
+.number{
+    border-radius: 5px;
+    width: 10%;
+}
+.color{
+    width: 12%;
+}
+.mota{
+    width: 50%;
+}
